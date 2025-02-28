@@ -2,8 +2,9 @@ namespace LogicalParser;
 
 public static class FormulaParser
 {
-    public static IEvaluatable Parse(string input)
+    public static IEvaluatable Parse(string input, List<string> formulas)
     {
+        formulas.Insert(0, input);
         if (!HasSign(input)) return new PropositionalVariable(input);
         
         string left = FindLeftSubFormula(input);
@@ -12,11 +13,11 @@ public static class FormulaParser
 
         switch (sign)
         {
-            case '!': return new Negation(Parse(right));
-            case '&': return new Conjunction(Parse(left), Parse(right));
-            case '|': return new Disjunction(Parse(left), Parse(right));
-            case '-': return new Implication(Parse(left), Parse(right));
-            case '~': return new Implication(Parse(left), Parse(right));
+            case '!': return new Negation(Parse(right, formulas));
+            case '&': return new Conjunction(Parse(left, formulas), Parse(right, formulas));
+            case '|': return new Disjunction(Parse(left, formulas), Parse(right, formulas));
+            case '-': return new Implication(Parse(left, formulas), Parse(right, formulas));
+            case '~': return new Implication(Parse(left, formulas), Parse(right, formulas));
         }
         
         throw new FormatException("Invalid formula");

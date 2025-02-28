@@ -12,9 +12,19 @@ public class Equivalence: IEvaluatable
         RightSide = rightSide;
     }
     
-    public bool Evaluate()
+    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
     {
-        if (LeftSide.Evaluate() == RightSide.Evaluate()) return true;
+        if (LeftSide.Evaluate(variables, partialResults) == RightSide.Evaluate(variables, partialResults))
+        {
+            partialResults.Add(true);
+            return true;
+        }
+        partialResults.Add(false);
         return false;
+    }
+    
+    public override string ToString()
+    {
+        return LeftSide.ToString() + RightSide.ToString() + $"({LeftSide.ToString()} ~ {RightSide.ToString()})";
     }
 }

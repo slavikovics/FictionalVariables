@@ -12,9 +12,19 @@ public class Implication: IEvaluatable
         RightSide = rightSide;
     }
     
-    public bool Evaluate()
+    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
     {
-        if (LeftSide.Evaluate() && RightSide.Evaluate() == false) return false;
+        if (LeftSide.Evaluate(variables, partialResults) && RightSide.Evaluate(variables, partialResults) == false)
+        {
+            partialResults.Add(false);
+            return false;
+        }
+        partialResults.Add(true);
         return true;
+    }
+    
+    public override string ToString()
+    {
+        return LeftSide.ToString() + RightSide.ToString() + $"({LeftSide.ToString()} -> {RightSide.ToString()})";
     }
 }

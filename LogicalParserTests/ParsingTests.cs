@@ -62,6 +62,7 @@ public sealed class ParsingTests
     [TestMethod]
     public void ParseTest()
     {
-        IEvaluatable logicalFormula = FormulaParser.Parse("(a&b)|(a|b&c)");
+        List<string> formulas = new List<string>();
+        IEvaluatable logicalFormula = FormulaParser.Parse("(a&b)|(a|b&c)", formulas);
     }
 }
