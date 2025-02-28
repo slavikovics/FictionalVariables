@@ -3,10 +3,12 @@ namespace LogicalParser;
 public class PropositionalVariable: IEvaluatable
 {
     public bool Value { get; }
+    
+    public string Name { get; }
 
-    public PropositionalVariable(bool value)
+    public PropositionalVariable(string name)
     {
-        Value = value;
+        Name = name;
     }
     
     public bool Evaluate()
