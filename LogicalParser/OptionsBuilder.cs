@@ -4,17 +4,15 @@ public class OptionsBuilder
 {
     public static List<string> BuildOptions(List<string> arguments)
     {
-        arguments.Add("0");
-        arguments.Add("1");
-        
+        List<string> options = ["0", "1"];
         int count = arguments.Count;
 
         for (int i = 0; i < count - 1; i++)
         {
-            arguments = ResizeList(arguments);
+            options = ResizeList(options);
         }
         
-        return arguments;
+        return options;
     }
 
     private static List<string> ResizeList(List<string> arguments)
