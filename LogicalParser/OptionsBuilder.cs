@@ -39,11 +39,27 @@ public class OptionsBuilder
         return arguments;
     }
 
-    private static Dictionary<string, bool> BuildOptions(List<string> arguments, List<string> propositionalVariables)
+    
+    // TODO write tests for this + char conversion
+    private static List<Dictionary<string, bool>> BuildOptions(List<string> arguments, List<string> propositionalVariables)
     {
-        foreach (var variable in propositionalVariables)
+        List<Dictionary<string, bool>> options = new List<Dictionary<string, bool>>();
+        
+        for (int i = 0; i < arguments.Count; i++)
         {
+            if (arguments[0].Length != propositionalVariables.Count)
+                throw new ArgumentException("Propositional variable count mismatch");
+
+            Dictionary<string, bool> option = new Dictionary<string, bool>();
+
+            for (int j = 0; j < arguments[i].Length; j++)
+            {
+                option.Add(propositionalVariables[j], Convert.ToBoolean(arguments[i][j]));
+            }
             
+            options.Add(option);
         }
+        
+        return options;
     }
 }
