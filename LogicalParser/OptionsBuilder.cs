@@ -43,7 +43,6 @@ public class OptionsBuilder
         return true;
     }
     
-    // TODO write tests for this + char conversion
     public static List<Dictionary<string, bool>> BuildOptions(List<string> arguments, List<string> propositionalVariables)
     {
         List<Dictionary<string, bool>> options = new List<Dictionary<string, bool>>();
@@ -64,5 +63,11 @@ public class OptionsBuilder
         }
         
         return options;
+    }
+
+    public static List<Dictionary<string, bool>> BuildOptions(List<string> propositionalVariables)
+    {
+        List<string> arguments = BuildArguments(propositionalVariables);
+        return BuildOptions(arguments, propositionalVariables);
     }
 }

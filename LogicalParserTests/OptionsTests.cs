@@ -27,5 +27,13 @@ public class OptionsTests
         List<string> arguments = ["a", "b"];
         List<string> options = OptionsBuilder.BuildArguments(arguments);
         List<Dictionary<string, bool>> results = OptionsBuilder.BuildOptions(options, arguments);
+
+        foreach (var dict in results)
+        {
+            foreach (var argument in arguments)
+            {
+                if (!dict.ContainsKey(argument)) Assert.Fail();
+            }
+        }
     }
 }

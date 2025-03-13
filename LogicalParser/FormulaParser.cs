@@ -2,9 +2,12 @@ namespace LogicalParser;
 
 public static class FormulaParser
 {
-    public static IEvaluatable Parse(string input, List<string> formulas)
+    public static IEvaluatable Parse(string input, List<string>? formulas = null)
     {
-        formulas.Insert(0, input);
+        input = input.Replace(" ", "").ToLower();
+        
+        if (formulas is null) formulas = [];
+        if (!IsPropositionalVariable(input)) formulas.Insert(0, input);
         if (!HasSign(input)) return new PropositionalVariable(input);
         
         string left = FindLeftSubFormula(input);
@@ -110,5 +113,23 @@ public static class FormulaParser
         foreach (int sign in signs) if (input[sign] == '!') return sign;
         
         throw new ArithmeticException("Invalid operation");
+    }
+
+    public static List<string> FindAllPropositionalVariables(string input)
+    {
+        var variables = new List<string>();
+
+        foreach (var c in input)
+        {
+            if (IsPropositionalVariable(c.ToString())) variables.Add(c.ToString());
+        }
+
+        return variables;
+    }
+
+    private static bool IsPropositionalVariable(string input)
+    {
+        if (input.Length > 1) return false;
+        return char.IsLetter(Convert.ToChar(input));
     }
 }
