@@ -11,9 +11,8 @@ public class PropositionalVariable: IEvaluatable
         Name = name;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
+    public bool Evaluate(Dictionary<string, bool> variables)
     {
-        partialResults.Add(variables[Name]);
         return variables[Name];
     }
 

@@ -12,14 +12,13 @@ public class Equivalence: IEvaluatable
         RightSide = rightSide;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
+    public bool Evaluate(Dictionary<string, bool> variables)
     {
-        if (LeftSide.Evaluate(variables, partialResults) == RightSide.Evaluate(variables, partialResults))
+        if (LeftSide.Evaluate(variables) == RightSide.Evaluate(variables))
         {
-            partialResults.Add(true);
             return true;
         }
-        partialResults.Add(false);
+        
         return false;
     }
     

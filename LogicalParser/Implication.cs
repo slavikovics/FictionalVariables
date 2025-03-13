@@ -12,14 +12,12 @@ public class Implication: IEvaluatable
         RightSide = rightSide;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
+    public bool Evaluate(Dictionary<string, bool> variables)
     {
-        if (LeftSide.Evaluate(variables, partialResults) && RightSide.Evaluate(variables, partialResults) == false)
+        if (LeftSide.Evaluate(variables) && RightSide.Evaluate(variables) == false)
         {
-            partialResults.Add(false);
             return false;
         }
-        partialResults.Add(true);
         return true;
     }
     

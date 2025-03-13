@@ -9,10 +9,9 @@ public class Negation: IEvaluatable
         Formula = formula;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
+    public bool Evaluate(Dictionary<string, bool> variables)
     {
-        partialResults.Add(!Formula.Evaluate(variables, partialResults));
-        return !Formula.Evaluate(variables, partialResults);
+        return !Formula.Evaluate(variables);
     }
     
     public override string ToString()

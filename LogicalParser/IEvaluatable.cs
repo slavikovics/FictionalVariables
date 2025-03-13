@@ -2,5 +2,5 @@ namespace LogicalParser;
 
 public interface IEvaluatable
 {
-    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults);
+    public bool Evaluate(Dictionary<string, bool> variables);
 }

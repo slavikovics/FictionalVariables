@@ -2,7 +2,7 @@ namespace LogicalParser;
 
 public class OptionsBuilder
 {
-    public static List<string> BuildOptions(List<string> arguments)
+    public static List<string> BuildArguments(List<string> arguments)
     {
         List<string> options = ["0", "1"];
         int count = arguments.Count;
@@ -37,9 +37,14 @@ public class OptionsBuilder
         return arguments;
     }
 
+    private static bool CharConversion(char c)
+    {
+        if (c == '0') return false;
+        return true;
+    }
     
     // TODO write tests for this + char conversion
-    private static List<Dictionary<string, bool>> BuildOptions(List<string> arguments, List<string> propositionalVariables)
+    public static List<Dictionary<string, bool>> BuildOptions(List<string> arguments, List<string> propositionalVariables)
     {
         List<Dictionary<string, bool>> options = new List<Dictionary<string, bool>>();
         
@@ -52,7 +57,7 @@ public class OptionsBuilder
 
             for (int j = 0; j < arguments[i].Length; j++)
             {
-                option.Add(propositionalVariables[j], Convert.ToBoolean(arguments[i][j]));
+                option.Add(propositionalVariables[j], CharConversion(arguments[i][j]));
             }
             
             options.Add(option);

@@ -12,10 +12,9 @@ public class Conjunction: IEvaluatable
         RightSide = rightSide;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables, List<bool> partialResults)
+    public bool Evaluate(Dictionary<string, bool> variables)
     {
-        partialResults.Add(LeftSide.Evaluate(variables, partialResults) && RightSide.Evaluate(variables, partialResults));
-        return LeftSide.Evaluate(variables, partialResults) && RightSide.Evaluate(variables, partialResults);
+        return LeftSide.Evaluate(variables) && RightSide.Evaluate(variables);
     }
     
     public override string ToString()
