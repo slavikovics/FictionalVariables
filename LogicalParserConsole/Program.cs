@@ -6,11 +6,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter logical formula");
-        string? formula = Console.ReadLine();
-        if (formula is null) return;
+        while (true)
+        {
+            Console.WriteLine("Enter logical formula");
+            string? formula = Console.ReadLine();
+            if (formula is null) return;
 
-        Table table = new Table(formula);
-        Console.WriteLine(table.Content);
+            Table table = new Table(formula);
+            Console.WriteLine(table.Content);
+        }
+        
+        Console.ReadKey();
     }
 }

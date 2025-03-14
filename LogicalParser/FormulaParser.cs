@@ -20,7 +20,7 @@ public static class FormulaParser
             case '&': return new Conjunction(Parse(left, formulas), Parse(right, formulas));
             case '|': return new Disjunction(Parse(left, formulas), Parse(right, formulas));
             case '-': return new Implication(Parse(left, formulas), Parse(right, formulas));
-            case '~': return new Implication(Parse(left, formulas), Parse(right, formulas));
+            case '~': return new Equivalence(Parse(left, formulas), Parse(right, formulas));
         }
         
         throw new FormatException("Invalid formula");
@@ -121,7 +121,7 @@ public static class FormulaParser
 
         foreach (var c in input)
         {
-            if (IsPropositionalVariable(c.ToString())) variables.Add(c.ToString());
+            if (IsPropositionalVariable(c.ToString()) && !variables.Contains(c.ToString())) variables.Add(c.ToString());
         }
 
         return variables;
