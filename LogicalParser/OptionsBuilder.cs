@@ -1,40 +1,54 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace LogicalParser;
 
 public class OptionsBuilder
 {
     public static List<string> BuildArguments(List<string> arguments)
     {
-        List<string> options = ["0", "1"];
+        List<string> options = [];
         int count = arguments.Count;
+        
+        string firstOption = new string('0', count -1) + "0";
+        string diff = new string('0', count -1) + "1";
+        options.Add(firstOption);
 
-        for (int i = 0; i < count - 1; i++)
+        while (options.Last().Contains("0"))
         {
-            options = ResizeList(options);
+            firstOption = Sum(firstOption, diff);
+            options.Add(firstOption);
         }
         
         return options;
     }
-
-    private static List<string> ResizeList(List<string> arguments)
+    
+    public static string Sum(string firstArgument, string secondArgument)
     {
-        int count = arguments.Count;
+        string result = "";
 
-        for (int i = 0; i < count; i++)
+        int memorizedOne = 0;
+        for (int i = firstArgument.Length - 1; i >= 0; i--)
         {
-            arguments.Add(arguments[i]);
+            int iterationResult = Convert.ToInt32(firstArgument.Substring(i, 1)) + Convert.ToInt32(secondArgument.Substring(i, 1)) + memorizedOne;
+            switch (iterationResult)
+            {
+                case 0: memorizedOne = 0;
+                    result = "0" + result;
+                    break;
+                case 1: memorizedOne = 0;
+                    result = "1" + result;
+                    break;
+                case 2: memorizedOne = 1;
+                    result = "0" + result;
+                    break;
+                case 3: memorizedOne = 1;
+                    result = "1" + result;
+                    break;
+            }
         }
-        
-        for (int i = 0; i < arguments.Count / 2; i++)
-        {
-            arguments[i] += "0";
-        }
+        if (memorizedOne == 1) result = "1" + result;
 
-        for (int i = arguments.Count / 2; i < arguments.Count; i++)
-        {
-            arguments[i] += "1";
-        }
-        
-        return arguments;
+        return result;
     }
 
     private static bool CharConversion(char c)
