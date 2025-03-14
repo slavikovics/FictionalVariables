@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace LogicalParser;
 
-public class OptionsBuilder
+public static class OptionsBuilder
 {
     public static List<string> BuildArguments(List<string> arguments)
     {
@@ -22,7 +22,7 @@ public class OptionsBuilder
         return options;
     }
     
-    public static string Sum(string firstArgument, string secondArgument)
+    private static string Sum(string firstArgument, string secondArgument)
     {
         string result = "";
 
