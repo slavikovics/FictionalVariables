@@ -14,11 +14,7 @@ public class Implication: IEvaluatable
     
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        if (LeftSide.Evaluate(variables) && RightSide.Evaluate(variables) == false)
-        {
-            return false;
-        }
-        return true;
+        return LeftSide.Evaluate(variables) && RightSide.Evaluate(variables) == false;
     }
     
     public override string ToString()
