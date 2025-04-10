@@ -4,11 +4,13 @@ public class Truth: IEvaluatable
 {
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        return true;
+        bool value = true;
+        return value;
     }
 
     public override string ToString()
     {
-        return "1";
+        string result = "1";
+        return result;
     }
 }

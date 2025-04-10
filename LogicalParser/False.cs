@@ -4,11 +4,13 @@ public class False: IEvaluatable
 {
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        return false;
+        bool value = false;
+        return value;
     }
 
     public override string ToString()
     {
-        return "0";
+        string result = "0";
+        return result;
     }
 }

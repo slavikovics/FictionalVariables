@@ -14,11 +14,13 @@ public class Conjunction: IEvaluatable
     
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        return LeftSide.Evaluate(variables) && RightSide.Evaluate(variables);
+        bool value = LeftSide.Evaluate(variables) && RightSide.Evaluate(variables);
+        return value;
     }
     
     public override string ToString()
     {
-        return $"({LeftSide}&{RightSide})";
+        string result = $"({LeftSide}&{RightSide})";
+        return result;
     }
 }

@@ -11,11 +11,13 @@ public class Negation: IEvaluatable
     
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        return !Formula.Evaluate(variables);
+        bool value = !Formula.Evaluate(variables);
+        return value;
     }
     
     public override string ToString()
     {
-        return $"(!{Formula})";
+        string result = $"(!{Formula})";
+        return result;
     }
 }

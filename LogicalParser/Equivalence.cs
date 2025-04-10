@@ -14,16 +14,13 @@ public class Equivalence: IEvaluatable
     
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        if (LeftSide.Evaluate(variables) == RightSide.Evaluate(variables))
-        {
-            return true;
-        }
-        
-        return false;
+        bool value = LeftSide.Evaluate(variables) == RightSide.Evaluate(variables);
+        return value;
     }
     
     public override string ToString()
     {
-        return $"({LeftSide}~{RightSide})";
+        string result = $"({LeftSide}~{RightSide})";
+        return result;
     }
 }
