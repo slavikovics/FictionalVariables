@@ -6,12 +6,6 @@ public class Table
 {
     public string IndexForm { get; private set; }
 
-    public Table(List<string> formulas, List<Dictionary<string, bool>> options)
-    {        
-        IndexForm = "";
-        BuildBody(options, formulas);
-    }
-
     public Table(string input)
     {
         input = input.ToLower();

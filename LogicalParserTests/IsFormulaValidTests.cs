@@ -128,6 +128,10 @@ public sealed class IsFormulaValidTests
         isValid = FormulaStringChecker.Check(formula);
         Assert.IsFalse(isValid);
         
+        formula = "(a=b)";
+        isValid = FormulaStringChecker.Check(formula);
+        Assert.IsFalse(isValid);
+        
         formula = "(a|1)&(b|0)";
         isValid = FormulaStringChecker.Check(formula);
         Assert.IsFalse(isValid);
