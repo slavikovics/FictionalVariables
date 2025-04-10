@@ -2,13 +2,11 @@ namespace LogicalParser;
 
 public static class FormulaParser
 {
-    public static IEvaluatable Parse(string input, List<string>? formulas = null)
+    public static IEvaluatable Parse(string input)
     {
         input = input.Replace(" ", "").ToLower();
         CheckBracketCount(input);
         
-        if (formulas is null) formulas = [];
-        if (!IsPropositionalVariable(input)) formulas.Insert(0, input);
         if (!HasSign(input))
         {
             if (input == "1") return new Truth();
@@ -23,11 +21,11 @@ public static class FormulaParser
 
         switch (sign)
         {
-            case '!': return new Negation(Parse(right, formulas));
-            case '&': return new Conjunction(Parse(left, formulas), Parse(right, formulas));
-            case '|': return new Disjunction(Parse(left, formulas), Parse(right, formulas));
-            case '-': return new Implication(Parse(left, formulas), Parse(right, formulas));
-            case '~': return new Equivalence(Parse(left, formulas), Parse(right, formulas));
+            case '!': return new Negation(Parse(right));
+            case '&': return new Conjunction(Parse(left), Parse(right));
+            case '|': return new Disjunction(Parse(left), Parse(right));
+            case '-': return new Implication(Parse(left), Parse(right));
+            case '~': return new Equivalence(Parse(left), Parse(right));
         }
         
         throw new FormatException("Invalid formula");
@@ -37,7 +35,7 @@ public static class FormulaParser
     {
         int index = 0;
         int level = 0;
-        List<int> signs = new List<int>();
+        List<int> signs = [];
         
         foreach (char c in input)
         {

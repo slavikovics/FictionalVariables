@@ -62,7 +62,7 @@ public sealed class ParsingTests
     [TestMethod]
     public void ParseTest()
     {
-        List<string> formulas = new List<string>();
-        IEvaluatable logicalFormula = FormulaParser.Parse("(a&b)|(a|b&c)", formulas);
+        IEvaluatable logicalFormula = FormulaParser.Parse("(a&b)|(a|b&c)");
+        Assert.IsTrue(logicalFormula is Disjunction);
     }
 }

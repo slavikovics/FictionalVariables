@@ -2,9 +2,9 @@ namespace LogicalParser;
 
 public class FictionalVariablesFinder
 {
-    public string FormulaString { get; private set; }
+    private string FormulaString { get; }
 
-    public List<string> FictionalVariables { get; private set; }
+    public List<string> FictionalVariables { get; }
     
     public FictionalVariablesFinder(string formulaString)
     {
@@ -12,7 +12,7 @@ public class FictionalVariablesFinder
         FictionalVariables = [];
     }
 
-    public bool IsFictionalVariable(string variableName)
+    private bool IsFictionalVariable(string variableName)
     {
         var formulaWithOne = FormulaString.Replace(variableName, "1");
         var formulaWithZero = FormulaString.Replace(variableName, "0");

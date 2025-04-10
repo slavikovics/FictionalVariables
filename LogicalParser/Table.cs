@@ -6,33 +6,28 @@ public class Table
 {
     public string IndexForm { get; private set; }
 
+    private IEvaluatable Formula { get; }
+
     public Table(string input)
     {
         input = input.ToLower();
         IndexForm = "";
-
-        var formulas = new List<string>();
         
         var variables = FormulaParser.FindAllPropositionalVariables(input);
-        FormulaParser.Parse(input, formulas);
+        Formula = FormulaParser.Parse(input);
         var options = OptionsBuilder.BuildOptions(variables);
         
-        BuildBody(options, variables.Concat(formulas).ToList());
+        BuildBody(options);
     }
 
-    private void BuildBody(List<Dictionary<string, bool>> options, List<string> formulas)
+    private void BuildBody(List<Dictionary<string, bool>> options)
     {
-        bool lastEvaluation = false;
         if (options.Count == 0) options.Add([]);
-        
-        for (int i = 0; i < options.Count; i++)
+
+        foreach (var option in options)
         {
-            for (int j = 0; j < formulas.Count; j++)
-            {
-                lastEvaluation = FormulaParser.Parse(formulas[j]).Evaluate(options[i]);
-            }
-            
-            IndexForm += ToString(lastEvaluation);
+            bool evaluationResult = Formula.Evaluate(option);
+            IndexForm += ToString(evaluationResult);
         }
     }
 
