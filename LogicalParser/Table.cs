@@ -29,23 +29,27 @@ public class Table
         DigitalConjunctiveForm = "";
         IndexForm = "";
         ColumnSizes = new List<int>();
+        
         BuildHeading(formulas);
         BuildBody(options, formulas);
     }
 
     public Table(string input)
     {
+        input = input.ToLower();
         Content = "";
         ConjunctiveForm = "";
         DisjunctiveForm = "";
         DigitalDisjunctiveForm = "";
         DigitalConjunctiveForm = "";
         IndexForm = "";
-        var variables = FormulaParser.FindAllPropositionalVariables(input);
+        ColumnSizes = new List<int>();
         var formulas = new List<string>();
+        
+        var variables = FormulaParser.FindAllPropositionalVariables(input);
         FormulaParser.Parse(input, formulas);
         var options = OptionsBuilder.BuildOptions(variables);
-        ColumnSizes = new List<int>();
+        
         BuildHeading(variables.Concat(formulas).ToList());
         BuildBody(options, variables.Concat(formulas).ToList());
     }
@@ -68,6 +72,7 @@ public class Table
     private void BuildBody(List<Dictionary<string, bool>> options, List<string> formulas)
     {
         bool lastEvaluation = false;
+        if (options.Count == 0) options.Add([]);
         
         for (int i = 0; i < options.Count; i++)
         {
