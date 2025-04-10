@@ -13,7 +13,7 @@ public static class FormulaStringChecker
         {
             parsedFormula = FormulaParser.Parse(formula);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return false;
         }
