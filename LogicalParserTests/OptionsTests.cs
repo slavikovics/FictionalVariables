@@ -36,4 +36,28 @@ public class OptionsTests
             }
         }
     }
+
+    [TestMethod]
+    public void SumTests()
+    {
+        string first = "11";
+        string second = "11";
+        string result = OptionsBuilder.Sum(first, second);
+        Assert.AreEqual(result, "110");
+        
+        first = "10";
+        second = "11";
+        result = OptionsBuilder.Sum(first, second);
+        Assert.AreEqual(result, "101");
+        
+        first = "00";
+        second = "11";
+        result = OptionsBuilder.Sum(first, second);
+        Assert.AreEqual(result, "11");
+        
+        first = "011111";
+        second = "100000";
+        result = OptionsBuilder.Sum(first, second);
+        Assert.AreEqual(result, "111111");
+    }
 }

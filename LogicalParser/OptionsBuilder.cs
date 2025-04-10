@@ -23,7 +23,7 @@ public static class OptionsBuilder
         return options;
     }
     
-    private static string Sum(string firstArgument, string secondArgument)
+    public static string Sum(string firstArgument, string secondArgument)
     {
         string result = "";
 
