@@ -11,7 +11,7 @@ public static class OptionsBuilder
         if (count == 0) return options;
         
         string firstOption = new string('0', count -1) + "0";
-        string diff = new string('0', count -1) + "1";
+        string diff = new string('0', count - 1) + "1";
         options.Add(firstOption);
 
         while (options.Last().Contains("0"))
@@ -36,12 +36,15 @@ public static class OptionsBuilder
                 case 0: memorizedOne = 0;
                     result = "0" + result;
                     break;
+                
                 case 1: memorizedOne = 0;
                     result = "1" + result;
                     break;
+                
                 case 2: memorizedOne = 1;
                     result = "0" + result;
                     break;
+                
                 case 3: memorizedOne = 1;
                     result = "1" + result;
                     break;
@@ -60,14 +63,14 @@ public static class OptionsBuilder
     
     public static List<Dictionary<string, bool>> BuildOptions(List<string> arguments, List<string> propositionalVariables)
     {
-        List<Dictionary<string, bool>> options = new List<Dictionary<string, bool>>();
+        List<Dictionary<string, bool>> options = [];
         
         for (int i = 0; i < arguments.Count; i++)
         {
             if (arguments[0].Length != propositionalVariables.Count)
                 throw new ArgumentException("Propositional variable count mismatch");
 
-            Dictionary<string, bool> option = new Dictionary<string, bool>();
+            Dictionary<string, bool> option = [];
 
             for (int j = 0; j < arguments[i].Length; j++)
             {

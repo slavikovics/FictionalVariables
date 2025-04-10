@@ -2,9 +2,9 @@ namespace LogicalParser;
 
 public class Implication: IEvaluatable
 {
-    public IEvaluatable LeftSide { get; set; }
+    public IEvaluatable LeftSide { get; }
     
-    public IEvaluatable RightSide { get; set; }
+    public IEvaluatable RightSide { get; }
 
     public Implication(IEvaluatable leftSide, IEvaluatable rightSide)
     {
@@ -18,6 +18,7 @@ public class Implication: IEvaluatable
         {
             return false;
         }
+        
         return true;
     }
     

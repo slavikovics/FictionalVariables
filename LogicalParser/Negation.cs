@@ -2,7 +2,7 @@ namespace LogicalParser;
 
 public class Negation: IEvaluatable
 {
-    public IEvaluatable Formula { get; set; }
+    public IEvaluatable Formula { get; }
 
     public Negation(IEvaluatable formula)
     {

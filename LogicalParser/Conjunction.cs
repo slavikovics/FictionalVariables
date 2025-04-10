@@ -2,9 +2,9 @@ namespace LogicalParser;
 
 public class Conjunction: IEvaluatable
 {
-    public IEvaluatable LeftSide { get; set; }
+    public IEvaluatable LeftSide { get; }
     
-    public IEvaluatable RightSide { get; set; }
+    public IEvaluatable RightSide { get; }
 
     public Conjunction(IEvaluatable leftSide, IEvaluatable rightSide)
     {
