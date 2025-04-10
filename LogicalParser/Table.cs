@@ -6,8 +6,6 @@ public class Table
 {
     private List<int> ColumnSizes { get; set; }
 
-    public string Content;
-
     public string ConjunctiveForm { get; private set; }
 
     public string DisjunctiveForm { get; private set; }
@@ -22,7 +20,6 @@ public class Table
 
     public Table(List<string> formulas, List<Dictionary<string, bool>> options)
     {        
-        Content = "";
         ConjunctiveForm = "";
         DisjunctiveForm = "";
         DigitalDisjunctiveForm = "";
@@ -37,7 +34,6 @@ public class Table
     public Table(string input)
     {
         input = input.ToLower();
-        Content = "";
         ConjunctiveForm = "";
         DisjunctiveForm = "";
         DigitalDisjunctiveForm = "";
@@ -63,10 +59,6 @@ public class Table
             _length += formula.Length + 2;
             ColumnSizes.Add(formula.Length + 2);
         }
-        
-        Content = new string(' ', _length) + "\n";
-        foreach (var formula in formulas) Content += $" {formula} ";
-        Content += "\n";
     }
 
     private void BuildBody(List<Dictionary<string, bool>> options, List<string> formulas)
@@ -81,7 +73,6 @@ public class Table
                 string marginLeft = new string(' ', ColumnSizes[j] / 2);
                 string marginRight = new string(' ', ColumnSizes[j] - 1 - marginLeft.Length);
                 lastEvaluation = FormulaParser.Parse(formulas[j]).Evaluate(options[i]);
-                Content += $"{marginLeft}{ToString(lastEvaluation)}{marginRight}";
             }
 
             if (lastEvaluation)
@@ -96,10 +87,8 @@ public class Table
             }
 
             IndexForm += ToString(lastEvaluation);
-            Content += '\n';
         }
-
-        Content += "\n";
+        
         DigitalDisjunctiveForm += ")";
         DigitalConjunctiveForm += ")";
     }
