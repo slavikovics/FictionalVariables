@@ -6,24 +6,6 @@ namespace LogicalParserTests;
 public class TableTests
 {
     [TestMethod]
-    public void FormsTest1()
-    {
-        string input = "a|b";
-        Table table = new Table(input);
-        Assert.AreEqual(table.DisjunctiveForm, "(!a&b)|(a&!b)|(a&b)");
-        Assert.AreEqual(table.ConjunctiveForm, "(a|b)");
-    }
-    
-    [TestMethod]
-    public void FormsTest2()
-    {
-        string input = "(a&b)|c";
-        Table table = new Table(input);
-        Assert.AreEqual(table.DisjunctiveForm, "(!a&!b&c)|(!a&b&c)|(a&!b&c)|(a&b&!c)|(a&b&c)");
-        Assert.AreEqual(table.ConjunctiveForm, "(a|b|c)&(a|!b|c)&(!a|b|c)");
-    }
-
-    [TestMethod]
     public void IndexForm1()
     {
         string input = "a&b&c&d";

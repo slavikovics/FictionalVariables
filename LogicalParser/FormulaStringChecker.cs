@@ -7,6 +7,7 @@ public static class FormulaStringChecker
     public static bool Check(string formula)
     {
         IEvaluatable parsedFormula;
+        if (formula.Contains("(0)") || formula.Contains("(1)")) return false;
         
         try
         {
@@ -16,14 +17,7 @@ public static class FormulaStringChecker
         {
             return false;
         }
-
-        if (formula.Contains("(0)") || formula.Contains("(1)")) return false;
-        if (parsedFormula.ToString() == formula) return true;
-        return false;
-    }
-
-    public static bool Check(IEvaluatable parsedFormula, string formula)
-    {
+        
         if (parsedFormula.ToString() == formula) return true;
         return false;
     }

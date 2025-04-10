@@ -8,7 +8,12 @@ public class PropositionalVariable: IEvaluatable
 
     public PropositionalVariable(string name)
     {
-        foreach (char c in name) if (!char.IsLetter(c)) throw new ArgumentException("Propositional variable name cannot include digits.");
+        foreach (char c in name) 
+            if (!char.IsLetter(c))
+            {
+                throw new ArgumentException("Propositional variable name cannot include digits.");
+            }
+        
         Name = name;
     }
     
