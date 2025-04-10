@@ -10,6 +10,8 @@ class Program
         {
             Console.WriteLine("Input logical formula");
             var formula = Console.ReadLine();
+            if (formula is null) continue;
+            
             Console.WriteLine();
             PrintFictionalVariables(formula);
             Console.WriteLine();
@@ -21,7 +23,7 @@ class Program
         try
         {
             if (!FormulaStringChecker.Check(formula)) throw new Exception("Not logical formula");
-            FictionalVariablesFinder fictionalVariablesFinder = new FictionalVariablesFinder(formula);
+            var fictionalVariablesFinder = new FictionalVariablesFinder(formula);
             fictionalVariablesFinder.FindFictionalVariables();
             
             Console.WriteLine("Found fictional variables:");
@@ -32,16 +34,19 @@ class Program
 
             if (fictionalVariablesFinder.FictionalVariables.Count == 0)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("No fictional variables found");
-                Console.ForegroundColor = ConsoleColor.White;
+                PrintInRed("No fictional variables found");
             }
         }
         catch (Exception e)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("It's not logical formula");
-            Console.ForegroundColor = ConsoleColor.White;
+            PrintInRed("It's not logical formula");
         }
+    }
+
+    static void PrintInRed(string content)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine(content);
+        Console.ForegroundColor = ConsoleColor.White;
     }
 }
