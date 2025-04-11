@@ -6,9 +6,9 @@ public class PropositionalVariable: IEvaluatable
 
     public PropositionalVariable(string name)
     {
-        foreach (char c in name)
+        for (int i = 0; i < name.Length; i++)
         {
-            if (!char.IsLetter(c))
+            if (!char.IsLetter(name[i]))
             {
                 throw new ArgumentException("Propositional variable name cannot include digits.");
             }
@@ -19,11 +19,13 @@ public class PropositionalVariable: IEvaluatable
     
     public bool Evaluate(Dictionary<string, bool> variables)
     {
-        return variables[Name];
+        bool result = variables[Name];
+        return result;
     }
 
     public override string ToString()
     {
-        return Name;
+        string result = Name;
+        return result;
     }
 }

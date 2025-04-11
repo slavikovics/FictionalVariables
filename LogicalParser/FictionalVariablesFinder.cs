@@ -23,7 +23,8 @@ public class FictionalVariablesFinder
         var tableZero = new Table(formulaWithZero);
         var resultZero = tableZero.IndexForm;
         
-        return resultOne == resultZero;
+        bool result = resultOne == resultZero;
+        return result;
     }
 
     public void FindFictionalVariables()

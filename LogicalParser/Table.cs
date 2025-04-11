@@ -23,17 +23,18 @@ public class Table
     private void BuildBody(List<Dictionary<string, bool>> options)
     {
         if (options.Count == 0) options.Add([]);
-
-        foreach (var option in options)
+        
+        for (int i = 0; i < options.Count; i++)
         {
-            bool evaluationResult = Formula.Evaluate(option);
+            bool evaluationResult = Formula.Evaluate(options[i]);
             IndexForm += ToString(evaluationResult);
         }
     }
 
     private string ToString(bool input)
     {
-        if (input) return "1";
-        return "0";
+        string result = "0";
+        if (input) result = "1";
+        return result;
     }
 }

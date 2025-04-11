@@ -57,8 +57,8 @@ public static class OptionsBuilder
 
     private static bool CharConversion(char c)
     {
-        if (c == '0') return false;
-        return true;
+        bool result = c != '0';
+        return result;
     }
     
     public static List<Dictionary<string, bool>> BuildOptions(List<string> arguments, List<string> propositionalVariables)
@@ -86,6 +86,7 @@ public static class OptionsBuilder
     public static List<Dictionary<string, bool>> BuildOptions(List<string> propositionalVariables)
     {
         List<string> arguments = BuildArguments(propositionalVariables);
-        return BuildOptions(arguments, propositionalVariables);
+        var result = BuildOptions(arguments, propositionalVariables);
+        return result;
     }
 }

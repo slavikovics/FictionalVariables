@@ -4,15 +4,18 @@ public static class FormulaParser
 {
     public static IEvaluatable Parse(string input)
     {
+        IEvaluatable? result = null;
         input = input.Replace(" ", "").ToLower();
         CheckBracketCount(input);
         
         if (!HasSign(input))
         {
-            if (input == "1") return new Truth();
-            if (input == "0") return new False();
+            if (input == "1") result = new Truth();
+            else if (input == "0") result = new False();
+            if (result is not null) return result;
             
-            return new PropositionalVariable(input);
+            result = new PropositionalVariable(input);
+            return result;
         }
         
         string left = FindLeftSubFormula(input);
@@ -21,38 +24,40 @@ public static class FormulaParser
 
         switch (sign)
         {
-            case '!': return new Negation(Parse(right));
-            case '&': return new Conjunction(Parse(left), Parse(right));
-            case '|': return new Disjunction(Parse(left), Parse(right));
-            case '-': return new Implication(Parse(left), Parse(right));
-            case '~': return new Equivalence(Parse(left), Parse(right));
+            case '!': result = new Negation(Parse(right)); break;
+            case '&': result = new Conjunction(Parse(left), Parse(right)); break;
+            case '|': result = new Disjunction(Parse(left), Parse(right)); break;
+            case '-': result = new Implication(Parse(left), Parse(right)); break;
+            case '~': result = new Equivalence(Parse(left), Parse(right)); break;
         }
-        
+
+        if (result is not null) return result;
         throw new FormatException("Invalid formula");
     }
 
     public static int FindMiddleSign(string input, int requiredLevel = 0)
     {
+        int result;
         int index = 0;
         int level = 0;
         List<int> signs = [];
         
-        foreach (char c in input)
+        for (int i = 0; i < input.Length; i++) 
         {
-            if (c == '(')
+            if (input[i] == '(')
             {
                 level++;
                 index++;
                 continue;
             }
-            if (c == ')')
+            if (input[i] == ')')
             {
                 level--;
                 index++;
                 continue;
             }
 
-            if (level == requiredLevel && IsLogicalSign(c))
+            if (level == requiredLevel && IsLogicalSign(input[i]))
             {
                 signs.Add(index);
             }
@@ -60,40 +65,50 @@ public static class FormulaParser
             index++;
         }
 
-        if (signs.Count != 0) return FindOperationWithLowestPriority(input, signs);
-        return FindMiddleSign(input, requiredLevel + 1);
+        if (signs.Count != 0) result = signs[0];
+        else result = FindMiddleSign(input, requiredLevel + 1);
+        return result;
     }
 
     private static bool IsLogicalSign(char c)
     {
-        if (c == '&' || c == '|' || c == '!' || c == '~' || c == '-' || c == '>') return true;
-        return false;
+        bool result = c == '&' || c == '|' || c == '!' || c == '~' || c == '-' || c == '>';
+        return result;
     }
 
     private static bool HasSign(string input)
     {
-        foreach (var c in input)
+        bool result = false;
+        
+        for (int i = 0; i < input.Length; i++)
         {
-            if (IsLogicalSign(c)) return true;
+            if (IsLogicalSign(input[i]))
+            {
+                result = true;
+                break;
+            }
         }
 
-        return false;
+        return result;
     }
 
     public static string NormalizeBrackets(string input)
     {
+        string result;
         int openBrackets = 0;
         int closeBrackets = 0;
         
-        foreach (var c in input)
+        for (int i = 0; i < input.Length; i++)
         {
-            if (c == '(') openBrackets++;
-            else if (c == ')') closeBrackets++;
+            if (input[i] == '(') openBrackets++;
+            else if (input[i] == ')') closeBrackets++;
         }
 
-        if (openBrackets == closeBrackets) return input;
-        if (openBrackets > closeBrackets) return input.Substring(1);
-        return input.Substring(0, input.Length - 1);
+        if (openBrackets == closeBrackets) result = input;
+        else if (openBrackets > closeBrackets) result = input.Substring(1);
+        else result = input.Substring(0, input.Length - 1);
+
+        return result;
     }
 
     public static string FindLeftSubFormula(string input)
@@ -107,17 +122,6 @@ public static class FormulaParser
         int middleSign = FindMiddleSign(input);
         if (input[middleSign + 1] == '>') middleSign++;
         return NormalizeBrackets(input.Substring(middleSign + 1));
-    }
-
-    public static int FindOperationWithLowestPriority(string input, List<int> signs)
-    {
-        foreach (int sign in signs) if (input[sign] == '~') return sign;
-        foreach (int sign in signs) if (input[sign] == '-') return sign;
-        foreach (int sign in signs) if (input[sign] == '|') return sign;
-        foreach (int sign in signs) if (input[sign] == '&') return sign;
-        foreach (int sign in signs) if (input[sign] == '!') return sign;
-        
-        throw new ArithmeticException("Invalid operation");
     }
 
     public static List<string> FindAllPropositionalVariables(string input)

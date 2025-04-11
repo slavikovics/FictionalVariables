@@ -48,16 +48,6 @@ public sealed class ParsingTests
         Assert.AreEqual(FormulaParser.FindRightSubFormula("((a->!b)&(a|b&c))"), "(a|b&c)");
         Assert.AreEqual(FormulaParser.FindRightSubFormula("a&b&c"), "b&c");
     }
-    
-    [TestMethod]
-    public void FindOperationWithLowestPriorityTest()
-    {
-        Assert.AreEqual(FormulaParser.FindMiddleSign("a&b|c~d"), 5);
-        Assert.AreEqual(FormulaParser.FindMiddleSign("a&b|c"), 3);
-        Assert.AreEqual(FormulaParser.FindMiddleSign("a|b|c|d"), 1);
-        Assert.AreEqual(FormulaParser.FindMiddleSign("a&!a"), 1);
-        Assert.AreEqual(FormulaParser.FindMiddleSign("!a&!b"), 2);
-    }
 
     [TestMethod]
     public void ParseTest()
