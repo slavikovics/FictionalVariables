@@ -21,7 +21,12 @@ public class TableTests
     {
         string input = "a&b&c&d";
         Table table = new Table(input);
-        Assert.AreEqual(table.IndexForm, "0000000000000001");
+        bool[] indexForm = new bool [16]
+        {
+            false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+            true
+        };
+        Assert.AreEqual(table.IndexForm, indexForm);
     }
     
     [TestMethod]

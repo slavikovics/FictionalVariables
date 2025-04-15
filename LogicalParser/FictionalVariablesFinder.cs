@@ -9,6 +9,8 @@
 // - Логические основы интеллектуальных систем. Практикум : учебно - метод. пособие / В. В. Голенков [и др.]. – Минск : БГУИР, 2011. – 70 с. : ил.
 //
 
+using System.Diagnostics;
+
 namespace LogicalParser;
 
 public class FictionalVariablesFinder
@@ -23,6 +25,30 @@ public class FictionalVariablesFinder
         FictionalVariables = [];
     }
 
+    private bool IsFictionalVariableNew(string variableName)
+    {
+        var formulaWithOneStr = FormulaString.Replace(variableName, "1");
+        var formulaWithZeroStr = FormulaString.Replace(variableName, "0");
+
+        var formulaWithOne = FormulaParser.Parse(formulaWithOneStr);
+        var formulaWithZero = FormulaParser.Parse(formulaWithZeroStr);
+        var formulaWithOneVariables = FormulaParser.FindAllPropositionalVariables(formulaWithOneStr);
+        var formulaWithZeroVariables = FormulaParser.FindAllPropositionalVariables(formulaWithZeroStr);
+        
+        Stopwatch sw = Stopwatch.StartNew();
+        var resultOne = OptionsBuilder.FindIndexForm(formulaWithOneVariables, formulaWithOne);
+        var resultZero = OptionsBuilder.FindIndexForm(formulaWithZeroVariables, formulaWithZero);
+        sw.Stop();
+        Console.WriteLine($"One variable processed in {sw.ElapsedMilliseconds} ms.");
+        
+        for (int i = 0; i < resultOne.Length; i++)
+        {
+            if (resultOne[i] != resultZero[i]) return false;
+        }
+        
+        return true;
+    }
+
     private bool IsFictionalVariable(string variableName)
     {
         var formulaWithOne = FormulaString.Replace(variableName, "1");
@@ -31,11 +57,18 @@ public class FictionalVariablesFinder
         var tableOne = new Table(formulaWithOne);
         var resultOne = tableOne.IndexForm;
         
+        
         var tableZero = new Table(formulaWithZero);
         var resultZero = tableZero.IndexForm;
         
-        bool result = resultOne == resultZero;
-        return result;
+        //bool result = resultOne == resultZero;
+
+        for (int i = 0; i < tableOne.OptionsCount; i++)
+        {
+            if (resultOne[i] != resultZero[i]) return false;
+        }
+        
+        return true;
     }
 
     public void FindFictionalVariables()
@@ -44,7 +77,11 @@ public class FictionalVariablesFinder
 
         foreach (var variable in allVariables)
         {
-            if (IsFictionalVariable(variable)) FictionalVariables.Add(variable);
+            if (IsFictionalVariableNew(variable)) FictionalVariables.Add(variable);
         }
+
+        OptionsBuilder.CachedOptions = null;
+        OptionsBuilder.CachedVariables = null;
+        OptionsBuilder.CachedArguments = null;
     }
 }

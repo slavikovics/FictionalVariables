@@ -9,6 +9,7 @@
 // - Логические основы интеллектуальных систем. Практикум : учебно - метод. пособие / В. В. Голенков [и др.]. – Минск : БГУИР, 2011. – 70 с. : ил.
 //
 
+using System.Diagnostics;
 using LogicalParser;
 
 namespace FictionalVariablesConsole;
@@ -23,9 +24,13 @@ class Program
             var formula = Console.ReadLine();
             if (formula is null) continue;
             if (formula == "exit") return;
-            
+
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
             Console.WriteLine();
             PrintFictionalVariables(formula);
+            stopWatch.Stop();
+            Console.WriteLine($"Elapsed time: {stopWatch.Elapsed}");
             Console.WriteLine();
         }
     }
