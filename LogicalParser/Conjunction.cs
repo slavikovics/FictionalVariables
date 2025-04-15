@@ -23,7 +23,7 @@ public class Conjunction: IEvaluatable
         RightSide = rightSide;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables)
+    public bool Evaluate(EvaluatableSource variables)
     {
         bool value = LeftSide.Evaluate(variables) && RightSide.Evaluate(variables);
         return value;

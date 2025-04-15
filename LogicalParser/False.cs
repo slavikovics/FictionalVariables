@@ -13,7 +13,7 @@ namespace LogicalParser;
 
 public class False: IEvaluatable
 {
-    public bool Evaluate(Dictionary<string, bool> variables)
+    public bool Evaluate(EvaluatableSource variables)
     {
         bool value = false;
         return value;

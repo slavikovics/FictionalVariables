@@ -13,7 +13,7 @@ namespace LogicalParser;
 
 public class Truth: IEvaluatable
 {
-    public bool Evaluate(Dictionary<string, bool> variables)
+    public bool Evaluate(EvaluatableSource variables)
     {
         bool value = true;
         return value;

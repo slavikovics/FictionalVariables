@@ -223,7 +223,7 @@ public static class OptionsBuilder
             //}
             source.VariableValues = CachedArguments[i];
             
-            result[i] = formula.Evaluate(option);
+            result[i] = formula.Evaluate(source);
         }
         
         sw2.Stop();

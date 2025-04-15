@@ -28,7 +28,7 @@ public class PropositionalVariable: IEvaluatable
         }
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables)
+    public bool Evaluate(EvaluatableSource variables)
     {
         bool result = variables[Name];
         return result;

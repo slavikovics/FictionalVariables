@@ -48,7 +48,7 @@ public class Table
         
         for (int i = 0; i < options.Count; i++)
         {
-            IndexForm[i] = Formula.Evaluate(options[i]);
+            //IndexForm[i] = Formula.Evaluate(options[i]);
             //IndexForm += ToString(evaluationResult);
         }
     }

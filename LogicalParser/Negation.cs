@@ -20,7 +20,7 @@ public class Negation: IEvaluatable
         Formula = formula;
     }
     
-    public bool Evaluate(Dictionary<string, bool> variables)
+    public bool Evaluate(EvaluatableSource variables)
     {
         bool value = !Formula.Evaluate(variables);
         return value;
