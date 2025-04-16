@@ -210,6 +210,7 @@ public static class OptionsBuilder
         }
 
         EvaluatableSource source = new EvaluatableSource(propositionalVariables);
+        source.PrecomputeIndexes(formula);
         sw1.Stop();
         Console.WriteLine($"Preparation done in {sw1.ElapsedMilliseconds} ms");
 
@@ -222,7 +223,6 @@ public static class OptionsBuilder
                 //option[propositionalVariables[j]] = CachedArguments[i][j];
             //}
             source.VariableValues = CachedArguments[i];
-            
             result[i] = formula.Evaluate(source);
         }
         

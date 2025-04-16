@@ -13,7 +13,9 @@ namespace LogicalParser;
 
 public class PropositionalVariable: IEvaluatable
 {
-    public string Name { get; }
+    public string Name { get; set; }
+    
+    public int VariableIndex { get; set; }
 
     public PropositionalVariable(string name)
     {
@@ -30,7 +32,7 @@ public class PropositionalVariable: IEvaluatable
     
     public bool Evaluate(EvaluatableSource variables)
     {
-        bool result = variables[Name];
+        bool result = variables[VariableIndex];
         return result;
     }
 

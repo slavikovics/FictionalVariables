@@ -1,0 +1,74 @@
+namespace LogicalParser;
+
+public class EvaluatableSource
+{
+    public string[] VariableNames { get; set; }
+    
+    public bool[] VariableValues { get; set; }
+    
+    private Dictionary<string, int> VariableIndexes { get; set; }
+
+    public EvaluatableSource(List<string> variables)
+    {
+        VariableNames = variables.ToArray();
+        VariableIndexes = [];
+        for (int i = 0; i < variables.Count; i++)
+        {
+            VariableIndexes.Add(VariableNames[i], i);
+        }
+    }
+
+    public void PrecomputeIndexes(IEvaluatable evaluatable)
+    {
+        if (evaluatable is PropositionalVariable)
+        {
+            var variable = (PropositionalVariable)evaluatable;
+            variable.VariableIndex = VariableIndexes[variable.Name];
+            return;
+        }
+
+        if (evaluatable is Truth || evaluatable is False) return;
+
+        if (evaluatable is Negation)
+        {
+            var operation = (Negation)evaluatable;
+            PrecomputeIndexes(operation.Formula);
+            return;
+        }
+
+        if (evaluatable is Conjunction)
+        {
+            var operation = (Conjunction)evaluatable;
+            PrecomputeIndexes(operation.LeftSide);
+            PrecomputeIndexes(operation.RightSide);
+            return;
+        }
+        
+        if (evaluatable is Disjunction)
+        {
+            var operation = (Disjunction)evaluatable;
+            PrecomputeIndexes(operation.LeftSide);
+            PrecomputeIndexes(operation.RightSide);
+            return;
+        }
+        
+        if (evaluatable is Implication)
+        {
+            var operation = (Implication)evaluatable;
+            PrecomputeIndexes(operation.LeftSide);
+            PrecomputeIndexes(operation.RightSide);
+            return;
+        }
+        
+        if (evaluatable is Equivalence)
+        {
+            var operation = (Implication)evaluatable;
+            PrecomputeIndexes(operation.LeftSide);
+            PrecomputeIndexes(operation.RightSide);
+        }
+    }
+
+    public bool this[string variableName] => VariableValues[VariableIndexes[variableName]];
+    
+    public bool this[int variableIndex] => VariableValues[variableIndex];
+}
