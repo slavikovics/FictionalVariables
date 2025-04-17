@@ -11,4 +11,12 @@
       <ProjectReference Include="..\LogicalParser\LogicalParser.csproj" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <PublishReadyToRun>true</PublishReadyToRun>
+        <PublishSingleFile>true</PublishSingleFile>
+        <PublishTrimmed>true</PublishTrimmed>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
 </Project>

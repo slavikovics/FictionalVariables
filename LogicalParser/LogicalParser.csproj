@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <OutputType>Library</OutputType>
+    <PublishTrimmed>true</PublishTrimmed>
+  </PropertyGroup>
+
 </Project>

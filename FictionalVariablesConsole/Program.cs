@@ -30,7 +30,7 @@ class Program
             Console.WriteLine();
             PrintFictionalVariables(formula);
             stopWatch.Stop();
-            Console.WriteLine($"Elapsed time: {stopWatch.Elapsed}");
+            Console.WriteLine($"Затраченное время: {stopWatch.Elapsed}");
             Console.WriteLine();
         }
     }

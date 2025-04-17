@@ -27,6 +27,7 @@ public class FictionalVariablesFinder
 
     private bool IsFictionalVariableNew(string variableName)
     {
+        Stopwatch sw = Stopwatch.StartNew();
         var formulaWithOneStr = FormulaString.Replace(variableName, "1");
         var formulaWithZeroStr = FormulaString.Replace(variableName, "0");
 
@@ -35,35 +36,12 @@ public class FictionalVariablesFinder
         var formulaWithOneVariables = FormulaParser.FindAllPropositionalVariables(formulaWithOneStr);
         var formulaWithZeroVariables = FormulaParser.FindAllPropositionalVariables(formulaWithZeroStr);
         
-        Stopwatch sw = Stopwatch.StartNew();
         var resultOne = OptionsBuilder.FindIndexForm(formulaWithOneVariables, formulaWithOne);
         var resultZero = OptionsBuilder.FindIndexForm(formulaWithZeroVariables, formulaWithZero);
         sw.Stop();
-        Console.WriteLine($"One variable processed in {sw.ElapsedMilliseconds} ms.");
+        Console.WriteLine($"Переменная {variableName.ToUpper()} проверена за {sw.ElapsedMilliseconds} мс.");
         
         for (int i = 0; i < resultOne.Length; i++)
-        {
-            if (resultOne[i] != resultZero[i]) return false;
-        }
-        
-        return true;
-    }
-
-    private bool IsFictionalVariable(string variableName)
-    {
-        var formulaWithOne = FormulaString.Replace(variableName, "1");
-        var formulaWithZero = FormulaString.Replace(variableName, "0");
-        
-        var tableOne = new Table(formulaWithOne);
-        var resultOne = tableOne.IndexForm;
-        
-        
-        var tableZero = new Table(formulaWithZero);
-        var resultZero = tableZero.IndexForm;
-        
-        //bool result = resultOne == resultZero;
-
-        for (int i = 0; i < tableOne.OptionsCount; i++)
         {
             if (resultOne[i] != resultZero[i]) return false;
         }
@@ -79,9 +57,7 @@ public class FictionalVariablesFinder
         {
             if (IsFictionalVariableNew(variable)) FictionalVariables.Add(variable);
         }
-
-        OptionsBuilder.CachedOptions = null;
-        OptionsBuilder.CachedVariables = null;
+        
         OptionsBuilder.CachedArguments = null;
     }
 }
