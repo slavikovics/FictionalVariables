@@ -103,12 +103,15 @@ class Program
         string testFormula = "";
         Random rand = new Random();
 
-        for (int i = 0; i < numberOfOperations; i++)
+        for (int i = 0; i < numberOfOperations + 1; i++)
         {
             int operation = rand.Next(numberOfOperations);
             int randomArgument = rand.Next(arguments.Count);
             var argument = arguments[randomArgument];
-            testFormula = "(" + testFormula + operations[operation] + argument + ")";
+            
+            if (testFormula != "") testFormula = "(" + testFormula + operations[operation] + argument + ")";
+            else testFormula = argument;
+            
             arguments.RemoveAt(randomArgument);
         }
 
