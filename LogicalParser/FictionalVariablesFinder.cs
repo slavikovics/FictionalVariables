@@ -25,7 +25,7 @@ public class FictionalVariablesFinder
         FictionalVariables = [];
     }
 
-    private bool IsFictionalVariableNew(string variableName)
+    private bool IsFictionalVariable(string variableName)
     {
         Stopwatch sw = Stopwatch.StartNew();
         var formulaWithOneStr = FormulaString.Replace(variableName, "1");
@@ -53,11 +53,11 @@ public class FictionalVariablesFinder
     {
         var allVariables = FormulaParser.FindAllPropositionalVariables(FormulaString);
 
-        foreach (var variable in allVariables)
+        for (int i = 0; i < allVariables.Count; i++)
         {
-            if (IsFictionalVariableNew(variable)) FictionalVariables.Add(variable);
+            if (IsFictionalVariable(allVariables[i])) FictionalVariables.Add(allVariables[i]);
         }
-        
+
         OptionsBuilder.CachedArguments = null;
     }
 }

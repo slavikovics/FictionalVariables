@@ -47,12 +47,13 @@ class Program
             var fictionalVariablesFinder = new FictionalVariablesFinder(formula);
             fictionalVariablesFinder.FindFictionalVariables();
             
+            Console.WriteLine();
             Console.WriteLine("Найденные фиктивные переменные:");
             foreach (var variable in fictionalVariablesFinder.FictionalVariables)
             {
                 Console.WriteLine(variable.ToUpper());
             }
-
+            
             if (fictionalVariablesFinder.FictionalVariables.Count == 0)
             {
                 PrintInRed("Фиктивных переменных не найдено.");
@@ -66,6 +67,7 @@ class Program
 
     static string TranslateFormulaToInnerLanguage(string formula)
     {
+        if (formula.Contains("&") || formula.Contains("|")) throw new Exception("Wrong operation symbols");
         formula = formula.Replace("\\/", "|").Replace("/\\", "&");
 
         for (int i = 0; i < formula.Length; i++)

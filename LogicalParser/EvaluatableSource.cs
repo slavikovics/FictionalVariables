@@ -78,8 +78,6 @@ public class EvaluatableSource
             PrecomputeIndexes(operation.RightSide);
         }
     }
-
-    public bool this[string variableName] => VariableValues[VariableIndexes[variableName]];
     
     public bool this[int variableIndex] => VariableValues[variableIndex];
 }
