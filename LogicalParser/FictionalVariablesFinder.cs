@@ -49,13 +49,13 @@ public class FictionalVariablesFinder
         return true;
     }
 
-    public void FindFictionalVariables()
+    public void FindFictionalVariables(bool showTime = true)
     {
         var allVariables = FormulaParser.FindAllPropositionalVariables(FormulaString);
 
         for (int i = 0; i < allVariables.Count; i++)
         {
-            if (IsFictionalVariable(allVariables[i])) FictionalVariables.Add(allVariables[i]);
+            if (IsFictionalVariable(allVariables[i], showTime)) FictionalVariables.Add(allVariables[i]);
         }
 
         OptionsBuilder.CachedArguments = null;

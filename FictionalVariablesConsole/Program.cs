@@ -36,6 +36,7 @@ class Program
     private static void TestingUserKnowledge()
     {
         int mark = 0;
+        Console.WriteLine();
         
         for (int i = 0; i < 10; i++)
         {
@@ -67,7 +68,7 @@ class Program
         
         testFormula = TranslateFormulaToInnerLanguage(testFormula);
         var fictionalVariablesFinder = new FictionalVariablesFinder(testFormula);
-        fictionalVariablesFinder.FindFictionalVariables();
+        fictionalVariablesFinder.FindFictionalVariables(false);
 
         if (fictionalVariablesFinder.FictionalVariables.Count.ToString() != resp) return false;
         return true;
