@@ -16,13 +16,112 @@ namespace FictionalVariablesConsole;
 
 class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.WriteLine("1. Поиск фиктивных переменных");
+            Console.WriteLine("2. Тестирование знаний пользователя");
+            Console.WriteLine("exit. Введите 'exit', чтобы завершить выполнение программы.");
+            string? resp = Console.ReadLine();
+            
+            if (resp == "1") FindingFictionalVariables();
+            else if (resp == "2") TestingUserKnowledge();
+            else if (resp == "exit") return;
+            
+            Console.WriteLine();
+        }
+    }
+
+    private static void TestingUserKnowledge()
+    {
+        int mark = 0;
+        
+        for (int i = 0; i < 10; i++)
+        {
+            if (SingleTest())
+            {
+                Console.WriteLine("Ответ верный");
+                mark++;
+            }
+            else
+            {
+                PrintInRed("Ответ неверный");
+            }
+            Console.WriteLine();
+        }
+        
+        Console.WriteLine($"Ваша оценка за тестирование: {mark} из 10");
+    }
+
+    private static bool SingleTest()
+    {
+        Random rand = new Random();
+        int numberOfOperations = rand.Next(4) + 2;
+        int numberOfVariables = rand.Next(numberOfOperations + 1) + 1;
+        
+        var arguments = GenerateArguments(numberOfVariables, numberOfOperations);
+        var testFormula = GenerateTestFormula(arguments, numberOfOperations);
+        Console.WriteLine($"Сколько фиктивных переменных в формуле: {testFormula}?");
+        var resp = Console.ReadLine();
+        
+        testFormula = TranslateFormulaToInnerLanguage(testFormula);
+        var fictionalVariablesFinder = new FictionalVariablesFinder(testFormula);
+        fictionalVariablesFinder.FindFictionalVariables();
+
+        if (fictionalVariablesFinder.FictionalVariables.Count.ToString() != resp) return false;
+        return true;
+    }
+
+    private static List<string> GenerateArguments(int numberOfVariables, int numberOfOperations)
+    {
+        Random rand = new Random();
+        List<string> allVariables = ["A", "B", "C", "D", "E"];
+        List<string> arguments = [];
+        
+        arguments.AddRange(allVariables.GetRange(0, numberOfVariables));
+
+        for (int i = 0; i < numberOfOperations + 1 - numberOfVariables; i++)
+        {
+            int seed = rand.Next(2);
+            if (seed == 1)
+            {
+                arguments.Add("1");
+            }
+            else
+            {
+                arguments.Add("0");
+            }
+        }
+
+        return arguments;
+    }
+
+    private static string GenerateTestFormula(List<string> arguments, int numberOfOperations)
+    {
+        List<string> operations = ["/\\", "\\/", "->", "~"];
+        string testFormula = "";
+        Random rand = new Random();
+
+        for (int i = 0; i < numberOfOperations; i++)
+        {
+            int operation = rand.Next(numberOfOperations);
+            int randomArgument = rand.Next(arguments.Count);
+            var argument = arguments[randomArgument];
+            testFormula = "(" + testFormula + operations[operation] + argument + ")";
+            arguments.RemoveAt(randomArgument);
+        }
+
+        return testFormula;
+    }
+
+    private static void FindingFictionalVariables()
     {
         while (true)
         {
             Console.WriteLine("Введите формулу сокращённого языка логики высказываний. Или введите 'exit', чтобы завершить выполнение программы.");
             var formula = Console.ReadLine();
-            if (formula is null) continue;
+            if (formula is null) return;
             if (formula == "exit") return;
 
             var stopWatch = new Stopwatch();

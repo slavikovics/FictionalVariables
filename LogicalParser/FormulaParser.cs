@@ -148,7 +148,7 @@ public static class FormulaParser
         return variables;
     }
 
-    private static bool IsPropositionalVariable(string input)
+    public static bool IsPropositionalVariable(string input)
     {
         if (input.Length > 1) return false;
         return char.IsLetter(Convert.ToChar(input));
