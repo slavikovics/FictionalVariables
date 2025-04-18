@@ -73,7 +73,7 @@ public class EvaluatableSource
         
         if (evaluatable is Equivalence)
         {
-            var operation = (Implication)evaluatable;
+            var operation = (Equivalence)evaluatable;
             PrecomputeIndexes(operation.LeftSide);
             PrecomputeIndexes(operation.RightSide);
         }

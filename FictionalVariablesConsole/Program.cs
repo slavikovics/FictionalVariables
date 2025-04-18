@@ -76,7 +76,7 @@ class Program
     private static List<string> GenerateArguments(int numberOfVariables, int numberOfOperations)
     {
         Random rand = new Random();
-        List<string> allVariables = ["A", "B", "C", "D", "E"];
+        List<string> allVariables = ["A", "B", "C", "D", "E", "F"];
         List<string> arguments = [];
         
         arguments.AddRange(allVariables.GetRange(0, numberOfVariables));
@@ -103,14 +103,18 @@ class Program
         string testFormula = "";
         Random rand = new Random();
 
-        for (int i = 0; i < numberOfOperations + 1; i++)
+        for (int i = 0; i < numberOfOperations; i++)
         {
-            int operation = rand.Next(numberOfOperations);
+            int operation = rand.Next(4);
             int randomArgument = rand.Next(arguments.Count);
             var argument = arguments[randomArgument];
             
             if (testFormula != "") testFormula = "(" + testFormula + operations[operation] + argument + ")";
-            else testFormula = argument;
+            else
+            {
+                testFormula = argument;
+                i--;
+            }
             
             arguments.RemoveAt(randomArgument);
         }

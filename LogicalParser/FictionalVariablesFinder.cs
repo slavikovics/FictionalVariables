@@ -25,7 +25,7 @@ public class FictionalVariablesFinder
         FictionalVariables = [];
     }
 
-    private bool IsFictionalVariable(string variableName)
+    private bool IsFictionalVariable(string variableName, bool showTime = true)
     {
         Stopwatch sw = Stopwatch.StartNew();
         var formulaWithOneStr = FormulaString.Replace(variableName, "1");
@@ -39,7 +39,7 @@ public class FictionalVariablesFinder
         var resultOne = OptionsBuilder.FindIndexForm(formulaWithOneVariables, formulaWithOne);
         var resultZero = OptionsBuilder.FindIndexForm(formulaWithZeroVariables, formulaWithZero);
         sw.Stop();
-        Console.WriteLine($"Переменная {variableName.ToUpper()} проверена за {sw.ElapsedMilliseconds} мс.");
+        if (showTime) Console.WriteLine($"Переменная {variableName.ToUpper()} проверена за {sw.ElapsedMilliseconds} мс.");
         
         for (int i = 0; i < resultOne.Length; i++)
         {

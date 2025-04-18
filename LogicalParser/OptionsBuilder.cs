@@ -67,11 +67,20 @@ public static class OptionsBuilder
     
     public static bool[] FindIndexForm(List<string> propositionalVariables, IEvaluatable formula)
     {
+        bool[] result;
         if (CachedArguments == null) CachedArguments = BuildArguments(propositionalVariables);
-        bool[] result = new bool[CachedArguments.Count];
+        
+        result = new bool[CachedArguments.Count];
 
         EvaluatableSource source = new EvaluatableSource(propositionalVariables);
         source.PrecomputeIndexes(formula);
+        
+        if (CachedArguments.Count == 0)
+        {
+            result = new bool[1];
+            result[0] = formula.Evaluate(source);
+            return result;
+        }
         
         for (int i = 0; i < CachedArguments.Count; i++)
         {
