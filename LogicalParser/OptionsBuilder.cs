@@ -15,7 +15,7 @@ namespace LogicalParser;
 
 public static class OptionsBuilder
 {
-    public static List<bool[]> BuildArgumentsNew(List<string> arguments)
+    public static List<bool[]> BuildArguments(List<string> arguments)
     {
         List<bool[]> options = [];
         int count = arguments.Count;
@@ -67,14 +67,8 @@ public static class OptionsBuilder
     
     public static bool[] FindIndexForm(List<string> propositionalVariables, IEvaluatable formula)
     {
-        if (CachedArguments == null) CachedArguments = BuildArgumentsNew(propositionalVariables);
-        Dictionary<string, bool> option = [];
+        if (CachedArguments == null) CachedArguments = BuildArguments(propositionalVariables);
         bool[] result = new bool[CachedArguments.Count];
-        
-        foreach (var variable in propositionalVariables)
-        {
-            option.Add(variable, false);
-        }
 
         EvaluatableSource source = new EvaluatableSource(propositionalVariables);
         source.PrecomputeIndexes(formula);

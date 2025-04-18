@@ -125,7 +125,8 @@ public static class FormulaParser
     public static string FindLeftSubFormula(string input)
     {
         int middleSign = FindMiddleSign(input);
-        return NormalizeBrackets(input.Substring(0, middleSign));
+        string result = NormalizeBrackets(input.Substring(0, middleSign));
+        return result;
     }
 
     public static string FindRightSubFormula(string input)
@@ -139,9 +140,9 @@ public static class FormulaParser
     {
         var variables = new List<string>();
 
-        foreach (var c in input)
+        for (int i = 0; i < input.Length; i++)
         {
-            if (IsPropositionalVariable(c.ToString()) && !variables.Contains(c.ToString())) variables.Add(c.ToString());
+            if (IsPropositionalVariable(input[i].ToString()) && !variables.Contains(input[i].ToString())) variables.Add(input[i].ToString());
         }
 
         return variables;
@@ -158,10 +159,10 @@ public static class FormulaParser
         int leftBrackets = 0;
         int rightBrackets = 0;
 
-        foreach (char c in formula)
+        for (int i = 0; i < formula.Length; i++)
         {
-            if (c == '(') leftBrackets++;
-            else if (c == ')') rightBrackets++;
+            if (formula[i] == '(') leftBrackets++;
+            else if (formula[i] == ')') rightBrackets++;
         }
         
         if (leftBrackets != rightBrackets) throw new FormatException("Invalid brackets count");
