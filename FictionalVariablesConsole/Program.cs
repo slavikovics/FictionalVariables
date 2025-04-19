@@ -89,7 +89,7 @@ class Program
 
         for (int i = 0; i < formula.Length; i++)
         {
-            if (char.IsLower(formula[i]) && char.IsLetter(formula[i]))
+            if ((char.IsLower(formula[i]) && char.IsLetter(formula[i])) || (!char.IsAscii(formula[i])))
             {
                 throw new Exception("Not logical formula");
             }
