@@ -1,95 +1,71 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" modified="2025-05-02T23:25:10.722Z" etag="pYCTtKOSuCK8EwPU0kii" version="22.1.22" type="embed">
   <diagram name="Page-1" id="d7SSXYF1CG-nv_phF41L">
-    <mxGraphModel dx="3804" dy="2816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2763" dy="2401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-1" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FindFictionalVariables&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="-65" y="-310" width="190" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-3" target="GMXlGIsEn00OUuM3Z-hQ-96" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-3" value="begin" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="-262.5" y="-90" width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="-620" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-6" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;input: bool &lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;showTime = &lt;/span&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;true&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="-65" y="-260" width="230" height="60" as="geometry" />
+          <mxGeometry x="-280" y="-570" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-7" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;output: void&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="-75" y="-210" width="120" height="60" as="geometry" />
+          <mxGeometry x="-290" y="-520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-48" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FictionalVariablesFinder&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1270" y="-720" width="210" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-50" target="GMXlGIsEn00OUuM3Z-hQ-51" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-50" value="begin" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1062.5" y="-640" width="120" height="60" as="geometry" />
+          <mxGeometry x="1032.5" y="-990" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-51" target="GMXlGIsEn00OUuM3Z-hQ-72" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-51" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FormulaString = &lt;span style=&quot;&quot;&gt;formulaString&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-51" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FormulaString = &lt;span style=&quot;&quot;&gt;formulaString&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="962.5" y="-540" width="320" height="50" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-52" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;input: string &lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;formulaString&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1267.5" y="-670" width="230" height="60" as="geometry" />
+          <mxGeometry x="1030" y="-940" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-53" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;output: FictionalVariablesFinder&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1270" y="-620" width="270" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-54" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1062.5" y="-360" width="120" height="60" as="geometry" />
+          <mxGeometry x="1032.5" y="-890" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-61" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;IsFictionalVariable&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1380" y="-200" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-63" target="hHyw9ZhmQFmIBixU8_tA-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-63" value="begin" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1062.5" y="-180" width="120" height="60" as="geometry" />
+          <mxGeometry x="1178.75" y="550" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-64" target="GMXlGIsEn00OUuM3Z-hQ-75" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-64" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;var &lt;/span&gt;&lt;span style=&quot;&quot;&gt;formulaWithOne &lt;/span&gt;= FormulaString.&lt;span style=&quot;&quot;&gt;Replace&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;variableName&lt;/span&gt;, &lt;span style=&quot;&quot;&gt;&quot;1&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="737.5" y="-10" width="770" height="50" as="geometry" />
+        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-64" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;var &lt;/span&gt;&lt;span style=&quot;&quot;&gt;formulaWithOne &lt;/span&gt;= FormulaString.&lt;span style=&quot;&quot;&gt;Replace&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;variableName&lt;/span&gt;, &lt;span style=&quot;&quot;&gt;&quot;1&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="797.5" y="1070" width="770" height="50" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-65" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;input: string &lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;variableName,&amp;nbsp;&lt;/span&gt;, &lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;bool &lt;/span&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;showTime = &lt;/span&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;true&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1395" y="-150" width="410" height="60" as="geometry" />
+          <mxGeometry x="1193.75" y="600" width="410" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-66" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;output: bool result&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1380" y="-100" width="170" height="60" as="geometry" />
+          <mxGeometry x="1178.75" y="650" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-67" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1260" y="1450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-72" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FictionalVariables = [];&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="962.5" y="-450" width="320" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-72" target="GMXlGIsEn00OUuM3Z-hQ-54" edge="1">
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-72" target="10" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-72" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FictionalVariables = [];&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="962.5" y="-450" width="320" height="50" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-75" target="GMXlGIsEn00OUuM3Z-hQ-89" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-75" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;var &lt;/span&gt;&lt;span style=&quot;&quot;&gt;formulaWithZero &lt;/span&gt;= FormulaString.&lt;span style=&quot;&quot;&gt;Replace&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;variableName&lt;/span&gt;, &lt;span style=&quot;&quot;&gt;&quot;0&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="737.5" y="90" width="770" height="50" as="geometry" />
+        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-75" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;var &lt;/span&gt;&lt;span style=&quot;&quot;&gt;formulaWithZero &lt;/span&gt;= FormulaString.&lt;span style=&quot;&quot;&gt;Replace&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;variableName&lt;/span&gt;, &lt;span style=&quot;&quot;&gt;&quot;0&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="797.5" y="1170" width="770" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-89" target="GMXlGIsEn00OUuM3Z-hQ-90" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-89" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;var formulaWithOne = FormulaParser.Parse(formulaWithOneStr);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="828.13" y="180" width="588.75" height="45" as="geometry" />
+          <mxGeometry x="888.13" y="1260" width="588.75" height="45" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-90" target="hHyw9ZhmQFmIBixU8_tA-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GMXlGIsEn00OUuM3Z-hQ-90" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;var formulaWithZero = FormulaParser.Parse(formulaWithZeroStr);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.055299539170506916;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="851.25" y="265" width="542.5" height="45" as="geometry" />
+          <mxGeometry x="911.25" y="1345" width="542.5" height="45" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="GMXlGIsEn00OUuM3Z-hQ-96" target="hHyw9ZhmQFmIBixU8_tA-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -151,68 +127,64 @@
             <mxPoint x="-510.5" y="754.9999999999995" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-101" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FictionalVariables.Add(variable);&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-101" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;FictionalVariables.Add(variable);&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-711.5" y="585" width="403" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GMXlGIsEn00OUuM3Z-hQ-114" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="74.75" y="500" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-1" target="GMXlGIsEn00OUuM3Z-hQ-98" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-1" value="int i = 0;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-1" value="int i = 0;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-262.5" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-5" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;OptionsBuilder.CachedArguments = &lt;span style=&quot;&quot;&gt;null&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="-55.25" y="400" width="380" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-5" target="GMXlGIsEn00OUuM3Z-hQ-114" edge="1">
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-5" target="8" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-5" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;OptionsBuilder.CachedArguments = &lt;span style=&quot;&quot;&gt;null&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-55.25" y="400" width="380" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-7" target="GMXlGIsEn00OUuM3Z-hQ-64" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-7" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;Stopwatch sw = Stopwatch.StartNew();&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="966.25" y="-90" width="312.5" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-7" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;Stopwatch sw = Stopwatch.StartNew();&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1026.25" y="990" width="312.5" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-10" target="hHyw9ZhmQFmIBixU8_tA-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-10" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;var formulaWithOneVariables = FormulaParser.FindAllPropositionalVariables(formulaWithOneStr);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.03645007923930269;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="701.25" y="345" width="842.5" height="45" as="geometry" />
+          <mxGeometry x="761.25" y="1425" width="842.5" height="45" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-11" target="hHyw9ZhmQFmIBixU8_tA-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-11" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;var formulaWithZeroVariables = FormulaParser.FindAllPropositionalVariables(formulaWithZeroStr);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.03645007923930269;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="701.25" y="425" width="842.5" height="45" as="geometry" />
+          <mxGeometry x="761.25" y="1505" width="842.5" height="45" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-12" target="hHyw9ZhmQFmIBixU8_tA-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-12" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;var resultOne = OptionsBuilder.FindIndexForm(formulaWithOneVariables, formulaWithOne);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.03645007923930269;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="747.5" y="510" width="750" height="45" as="geometry" />
+          <mxGeometry x="807.5" y="1590" width="750" height="45" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-13" target="hHyw9ZhmQFmIBixU8_tA-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-13" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;var resultZero = OptionsBuilder.FindIndexForm(formulaWithZeroVariables, formulaWithZero);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.03645007923930269;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="747.5" y="590" width="750" height="45" as="geometry" />
+          <mxGeometry x="807.5" y="1670" width="750" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-14" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;sw.Stop();&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="963" y="670" width="312.5" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-14" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;sw.Stop();&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1023" y="1750" width="312.5" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-15" target="hHyw9ZhmQFmIBixU8_tA-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-15" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;Console&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;WriteLine&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;$&quot;Переменная &lt;/span&gt;{&lt;span style=&quot;&quot;&gt;variableName&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;ToUpper&lt;/span&gt;()}&lt;span style=&quot;&quot;&gt; проверена за &lt;/span&gt;{&lt;span style=&quot;&quot;&gt;sw&lt;/span&gt;.ElapsedMilliseconds}&lt;span style=&quot;&quot;&gt; мс.&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="708.5" y="900" width="821.5" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" target="hHyw9ZhmQFmIBixU8_tA-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1182.5" y="2030" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-16" target="hHyw9ZhmQFmIBixU8_tA-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-16" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;int &lt;/span&gt;i = &lt;span style=&quot;&quot;&gt;0&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1060.75" y="990" width="117" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-16" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;int &lt;/span&gt;i = &lt;span style=&quot;&quot;&gt;0&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1120.75" y="2070" width="117" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-17" target="hHyw9ZhmQFmIBixU8_tA-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -231,21 +203,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-17" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;i &amp;lt; resultOne.Length;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="963" y="1080" width="314.75" height="80" as="geometry" />
+          <mxGeometry x="1023" y="2160" width="314.75" height="80" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1119" y="1370" />
-              <mxPoint x="920" y="1370" />
-              <mxPoint x="920" y="1060" />
-              <mxPoint x="1120" y="1060" />
+              <mxPoint x="1179" y="2450" />
+              <mxPoint x="980" y="2450" />
+              <mxPoint x="980" y="2140" />
+              <mxPoint x="1180" y="2140" />
             </Array>
-            <mxPoint x="1120" y="1060" as="targetPoint" />
+            <mxPoint x="1180" y="2140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-19" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;font&gt;i++;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1060.75" y="1310" width="117" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-19" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;font&gt;i++;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1120.75" y="2390" width="117" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-20" target="hHyw9ZhmQFmIBixU8_tA-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -264,28 +236,32 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-20" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;resultOne[i] != resultZero[i]&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1182.75" y="1180" width="314.75" height="80" as="geometry" />
+          <mxGeometry x="1242.75" y="2260" width="314.75" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-23" target="GMXlGIsEn00OUuM3Z-hQ-67" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380.0303030303035" y="2530" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-23" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;&quot;&gt;false&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="1467.5" y="1300" width="117" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-23" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;&quot;&gt;false&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1527.5" y="2380" width="117" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hHyw9ZhmQFmIBixU8_tA-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hHyw9ZhmQFmIBixU8_tA-41" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="769" y="1400" />
-              <mxPoint x="1320" y="1400" />
+              <mxPoint x="829" y="2480" />
+              <mxPoint x="1380" y="2480" />
             </Array>
-            <mxPoint x="1320" y="1400" as="targetPoint" />
+            <mxPoint x="1380" y="2480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hHyw9ZhmQFmIBixU8_tA-41" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;&quot;&gt;true&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="710" y="1250" width="117" height="50" as="geometry" />
+        <mxCell id="hHyw9ZhmQFmIBixU8_tA-41" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;&quot;&gt;true&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="770" y="2330" width="117" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hSz8ovQeLSefIg9AwSHr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hSz8ovQeLSefIg9AwSHr-1" target="hHyw9ZhmQFmIBixU8_tA-15" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="hSz8ovQeLSefIg9AwSHr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hSz8ovQeLSefIg9AwSHr-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1182.5" y="1980" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="hSz8ovQeLSefIg9AwSHr-3" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="hSz8ovQeLSefIg9AwSHr-2" vertex="1" connectable="0">
           <mxGeometry x="-0.1244" y="-1" relative="1" as="geometry">
@@ -294,11 +270,11 @@
         </mxCell>
         <mxCell id="hSz8ovQeLSefIg9AwSHr-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" source="hSz8ovQeLSefIg9AwSHr-1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1120" y="970" as="targetPoint" />
+            <mxPoint x="1180" y="2050" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="670" y="800" />
-              <mxPoint x="670" y="970" />
-              <mxPoint x="1120" y="970" />
+              <mxPoint x="730" y="1880" />
+              <mxPoint x="730" y="2050" />
+              <mxPoint x="1180" y="2050" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -308,7 +284,37 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hSz8ovQeLSefIg9AwSHr-1" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;showTime&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="962.5" y="760" width="314.75" height="80" as="geometry" />
+          <mxGeometry x="1022.5" y="1840" width="314.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;begin&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-263.75" y="-70" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=-0.043;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="GMXlGIsEn00OUuM3Z-hQ-96" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="GMXlGIsEn00OUuM3Z-hQ-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;begin&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1061.25" y="-630" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="hHyw9ZhmQFmIBixU8_tA-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;begin&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1121.26" y="890" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;end&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="73.5" y="500" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;end&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1061.25" y="-360" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;end&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="2530" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="&lt;pre style=&quot;border-color: var(--border-color); font-size: 14px; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;Console.&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;WriteLine&lt;/span&gt;(&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;$&quot;Переменная &lt;/span&gt;{&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;variableName&lt;/span&gt;.&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ToUpper&lt;/span&gt;()}&lt;span style=&quot;border-color: var(--border-color);&quot;&gt; проверена за &lt;/span&gt;{&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;sw&lt;/span&gt;.ElapsedMilliseconds}&lt;span style=&quot;border-color: var(--border-color);&quot;&gt; мс.&quot;&lt;/span&gt;);&lt;/pre&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="758.75" y="1980" width="847.49" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
