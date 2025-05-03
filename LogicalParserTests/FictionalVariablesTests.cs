@@ -57,5 +57,31 @@ public sealed class FictionalVariablesTests
         fictionalVariablesFinder.FindFictionalVariables();
         variables = fictionalVariablesFinder.FictionalVariables;
         Assert.AreEqual(variables.Count, 0);
+        
+        formula = "(a->1)";
+        fictionalVariablesFinder = new FictionalVariablesFinder(formula);
+        fictionalVariablesFinder.FindFictionalVariables();
+        variables = fictionalVariablesFinder.FictionalVariables;
+        Assert.AreEqual(variables.Count, 1);
+        Assert.IsTrue(variables.Contains("a"));
+        
+        formula = "(a~(!a))";
+        fictionalVariablesFinder = new FictionalVariablesFinder(formula);
+        fictionalVariablesFinder.FindFictionalVariables();
+        variables = fictionalVariablesFinder.FictionalVariables;
+        Assert.AreEqual(variables.Count, 1);
+        Assert.IsTrue(variables.Contains("a"));
+        
+        formula = "(a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|q|r|s|1)";
+        fictionalVariablesFinder = new FictionalVariablesFinder(formula);
+        fictionalVariablesFinder.FindFictionalVariables();
+        variables = fictionalVariablesFinder.FictionalVariables;
+        Assert.AreEqual(variables.Count, 18);
+        
+        formula = "((a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|q|r|s)&0)";
+        fictionalVariablesFinder = new FictionalVariablesFinder(formula);
+        fictionalVariablesFinder.FindFictionalVariables();
+        variables = fictionalVariablesFinder.FictionalVariables;
+        Assert.AreEqual(variables.Count, 18);
     }
 }
